@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<script type="text/javascript" src="https://www.70e.com/static/js/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	var url = 'https://img.70e.com/upload';
+        function getBase64Image(img,width,height) {
+          var canvas = document.createElement("canvas");
+          canvas.width = width ? width : img.width;
+          canvas.height = height ? height : img.height;
+          var ctx = canvas.getContext("2d");
+          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+          var dataURL = canvas.toDataURL();
+          return dataURL;
+        }	
+	$('.createBASE64').click(function(){
+		var pictureUrl = 'https://img.70e.com/uploads/goods/50005/557158707194.jpg';
+		var img = new Image();
+		img.setAttribute("crossOrigin", 'Anonymous')//允许跨域
+		img.src=pictureUrl;
+		img.onload=function(){
+			data = getBase64Image(img,200,200);
+			if(data){
+				var formData = new FormData();
+				formData.append('file',data);
+				formData.append('t',1);
+				formData.append("directory","test")
+				formData.append("dtime",10)
+				console.log(url);
+				$.ajax({
+					type: 'post',
+					url: url,
+					data:formData,
+					processData : false,
+					contentType : false,
+					success: function(data){
+						console.log(data)
+					},
+					complete:function(data){
+						console.log(data)
+					}
+				});				
+			}
+		}
+	});
+	$('.uploadByfile').click(function(){
+		var formData = new FormData();
+		formData.append("file",$("#file")[0].files[0]);
+		formData.append("t",0);
+		formData.append("directory","test")
+		console.log(url);
+		$.ajax({
+			type: 'post',
+			url: url,
+			data:formData,
+			processData : false,
+			contentType : false,
+			success: function(data){
+				console.log(data)
+			},
+			complete:function(data){
+				console.log(data)
+			}
+		});
+	});
+});
+</script>
+
+<div>
+	<input type="text" name="t" value="0">
+	<input type="text" name="base64" placeholder="base64" >
+	<input type="file" id="file" name="file" />
+	<input type="text" name="filename" placeholder="文件名" />
+	<input type="text" name="directory" value="test" placeholder="上传目录" />
+	<button class="uploadByfile">upload file</button>
+	<span class="createBASE64">create picture</span>
+</div>
+
+</body>
+</html>

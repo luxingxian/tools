@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    /*img {
+      width: 100px;
+    }*/
+  </style>
+</head>
+<body>
+<!--<img id="tulip" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2256920272,2188849592&fm=26&gp=0.jpg" alt="" crossOrigin="Anonymous">-->
+<div id="box">
+<img id="tulip" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=158393800,2846304514&fm=26&gp=0.jpg" alt="" crossOrigin="Anonymous"><p>hhhhhhhhhhhhh</p>
+<p>hhhhhhhhhhhhh</p>
+</div>
+</body>
+</html>
+<script>
+  // Converts image to canvas; returns new canvas element
+  function convertImageToCanvas(image) {
+    var canvas = document.createElement("canvas");
+    canvas.width = image.width;
+    canvas.height = image.height;
+    canvas.getContext("2d").drawImage(image, 0, 0);
+    return canvas;
+  }
+
+  // Converts canvas to an image
+  function convertCanvasToImage(canvas) {
+    var image = new Image();
+    image.src = canvas.toDataURL("image/png");
+    return image;
+  }
+
+  function drawImage(img) {
+    var cs = convertImageToCanvas(img);
+    var image = convertCanvasToImage(cs);
+    document.body.appendChild(image);
+  }
+
+  window.onload = function () {
+    var img = document.getElementById("box");
+    img.onload = drawImage(img);
+  }
+</script>

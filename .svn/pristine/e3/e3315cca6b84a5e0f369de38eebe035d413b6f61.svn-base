@@ -1,0 +1,51 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "60113371",
+      "name": "1",
+      "font_class": "1",
+      "unicode": "e6c7",
+      "unicode_decimal": 59079
+    },
+    {
+      "icon_id": "60113510",
+      "name": "2",
+      "font_class": "2",
+      "unicode": "e6c8",
+      "unicode_decimal": 59080
+    },
+    {
+      "icon_id": "60113745",
+      "name": "3",
+      "font_class": "3",
+      "unicode": "e6c9",
+      "unicode_decimal": 59081
+    },
+    {
+      "icon_id": "60113749",
+      "name": "4",
+      "font_class": "4",
+      "unicode": "e6ca",
+      "unicode_decimal": 59082
+    },
+    {
+      "icon_id": "60113750",
+      "name": "5",
+      "font_class": "5",
+      "unicode": "e6cb",
+      "unicode_decimal": 59083
+    },
+    {
+      "icon_id": "60114150",
+      "name": "6",
+      "font_class": "6",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    }
+  ]
+}

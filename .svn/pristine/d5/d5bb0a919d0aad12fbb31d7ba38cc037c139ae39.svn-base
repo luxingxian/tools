@@ -1,0 +1,132 @@
+.clearfix:after{content:'';display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*zoom:1}
+body {
+	background-color: #f6f6f6;
+	font-family: "microsoft yahei";
+}
+.iconContent {
+	width: 1300px;
+	margin: 0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+.iconLeft {
+	width: 49%;
+	float: left;
+}
+.icontitle {
+	font-weight: 700;
+	color: #000;
+	font-size: 16px;
+	height: 16px;
+	line-height: 16px;
+	margin: 12px 0;
+	padding-left: 5px;
+	border-left: 3px solid #000;
+}
+#copyArea {
+	position: absolute;
+	opacity: 0;
+	z-index: -99;
+}
+.writerBox {
+	padding: 15px;
+	box-sizing: border-box;
+	height: 340px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	outline: none;
+	font-size: 14px;
+	color: #333;
+	overflow-y: auto;
+	line-height: 25px;
+}
+.iconLeft div[contenteditable]:empty:before{
+    content: '请粘贴/输入导购文案(必须包含产品链接和优惠券链接)';
+    color: #aaa;
+}
+.iconLeft div[contenteditable]:focus{
+    content:none;
+}
+.writeTip {
+	margin: 10px 0;
+	font-size: 16px;
+	color: red;
+	font-weight: 700;
+}
+.iconLeft .buttons {
+	text-align: right;
+}
+.iconLeft .buttons a {
+	display: inline-block;
+	text-align: center;
+	height: 34px;
+	line-height: 34px;
+	width: 80px;
+	border-radius: 4px;
+	border: 1px solid #000;
+	color: #000;
+	background-color: #fff;
+}
+.iconLeft .buttons a.btnCopy {
+	background-color: #000;
+	color: #fff;
+	margin-left: 5px;
+}
+.iconLeft .buttons a.btnCopy:hover {
+	opacity: .9;
+}
+/* ============ */
+.iconRight {
+	width: 49%;
+	float: right;
+}
+.iconsBox {
+	height: 430px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+}
+.tabTitle {
+	padding: 10px 3px;
+	width: 18%;
+	border-right: 1px solid #ddd;
+	height: 100%;
+	box-sizing: border-box;
+	float: left;
+}
+.tabTitle li {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #333;
+	font-size: 16px;
+	cursor: pointer;
+	width: 100%;
+	font-weight: normal;
+}
+.tabTitle li:hover{
+	color: #000;
+	font-weight: 600;
+}
+.tabTitle li.active {
+	color: #fff;
+	background-color: #000;
+	border-radius: 15px;
+}
+.tabTitle li.active:hover {
+	font-weight: normal;
+	color: #fff;
+}
+.iconsDiv {
+	float: right;
+	width: 82%;
+	padding: 10px 5px;
+	box-sizing: border-box;
+	height: 100%;
+	overflow-y: auto;
+}
+.iconsDiv img {
+	padding: 6px;
+	cursor: pointer;
+}

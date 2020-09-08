@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="https://www.70e.com/static/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="https://www.70e.com/static/until/layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="https://www.70e.com/static/until/animate/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="https://www.70e.com/static/until/swiper/css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/tools.css" />
+	</head>
+	<body>
+		<div class="tools">
+			<div class="banner"><img src="images/bannerBg.jpg"></div>
+			<div class="header"><a href="javascript:;" class="imgTab active">合成营销图</a><a href="javascript:;" class="textTab">微信文案编辑</a></div>
+			<div class="mainContent">
+				<div class="leftContent">
+					<div class="tabLeft imgDiv">
+						<div class="modeTab">
+							<div class="modes active">
+								<img src="images/img/mode1.png" alt="">
+								<img src="images/img/modeactive1.png" alt="">
+							</div>
+							<div class="modes">
+								<img src="images/img/mode2.png" alt="">
+								<img src="images/img/modeactive2.png" alt="">
+							</div>
+							<div class="modes">
+								<img src="images/img/mode3.png" alt="">
+								<img src="images/img/modeactive3.png" alt="">
+							</div>
+							<div class="modes">
+								<img src="images/img/mode4.png" alt="">
+								<img src="images/img/modeactive4.png" alt="">
+							</div>
+						</div>
+						
+						<div class="modeContent" id="imgArea">
+							<div class="modeDiv">
+							<div class="modeBox one clearfix">
+								<div class="inputOne">
+									<label class="upImg">
+										<p class="iconPlus">＋</p>
+										<p>点击上传图片</p>
+										<input type="file" name="" id="d0" value="" accept="image/*" class="imgInput" />
+									</label>
+									<label class="imgView dragBox" for="d0"></label>
+								</div>
+								<div class="inputTwo left">
+									<label class="upImg">
+										<p class="iconPlus">＋</p>
+										<p>点击上传图片</p>
+										<input type="file" name="" id="d1" value="" accept="image/*" class="imgInput" />
+									</label>
+									<label class="imgView dragBox" for="d1"></label>
+								</div>
+								<div class="inputTwo">
+									<label class="upImg">
+										<p class="iconPlus">＋</p>
+										<p>点击上传图片</p>
+										<input type="file" name="" id="d2" value="" accept="image/*" class="imgInput" />
+									</label>
+									<label class="imgView dragBox" for="d2"></label>
+								</div>
+							</div>
+							<!-- 模板一 -->
+							<div class="modeBox two clearfix">
+								<div class="inputThree">
+									<label class="upImg">
+										<p class="iconPlus">＋</p>
+										<p>点击上传图片</p>
+										<input type="file" name="" id="d3" value="" accept="image/*" class="imgInput" />
+									</label>
+									<label class="imgView dragBox" for="d3"></label>
+								</div>
+								<div class="inputThree">
+									<label class="upImg">
+										<p class="iconPlus">＋</p>
+										<p>点击上传图片</p>
+										<input type="file" name="" id="d4" value="" accept="image/*" class="imgInput" />
+									</label>
+									<label class="imgView dragBox" for="d4"></label>
+								</div>
+								<div class="inputThree">
+									<label class="upImg">
+										<p class="iconPlus">＋</p>
+										<p>点击上传图片</p>
+										<input type="file" name="" id="d5" value="" accept="image/*" class="imgInput" />
+									</label>
+									<label class="imgView dragBox" for="d5"></label>
+								</div>
+								<div class="inputThree">
+									<label class="upImg">
+										<p class="iconPlus">＋</p>
+										<p>点击上传图片</p>
+										<input type="file" name="" id="d6" value="" accept="image/*" class="imgInput" />
+									</label>
+									<label class="imgView dragBox" for="d6"></label>
+								</div>
+							</div>
+							<!-- 模板二 -->
+							<div class="modeBox three clearfix">
+								<div class="inputOne">
+									<label class="upImg">
+										<p class="iconPlus">＋</p>
+										<p>点击上传图片</p>
+										<input type="file" name="" id="d7" value="" accept="image/*" class="imgInput" />
+									</label>
+									<label class="imgView dragBox" for="d7"></label>
+								</div>
+								<div class="inputOne">
+									<label class="upImg">
+										<p class="iconPlus">＋</p>
+										<p>点击上传图片</p>
+										<input type="file" name="" id="d8" value="" accept="image/*" class="imgInput" />
+									</label>
+									<label class="imgView dragBox" for="d8"></label>
+								</div>
+							</div>
+							<!-- 模板三 -->
+							<div class="modeBox four clearfix">
+								<div class="inputOne">
+									<label class="upImg">
+										<p class="iconPlus">＋</p>
+										<p>点击上传图片</p>
+										<input type="file" name="" id="d9" value="" accept="image/*" class="imgInput" />
+									</label>
+									<label class="imgView dragBox" for="d9"></label>
+								</div>
+							</div>
+							<!-- 模板四 -->
+							
+							<div class="modeTag showWidth" id="drag">
+								<div class="tagView tagOne active">
+									<p class="salesTextOne link1">下单立减20元</p>
+									<p class="salesRight">
+										<span class="salesTypeTwo link2">券后价</span>
+										<span class="salesPriceThree border link3">29.9</span>
+									</p>
+									<span class="removeImg">×</span>
+								</div>
+							</div>
+						</div>
+						<div class="ewCode">
+							<div class="codeleft">
+							<p class="codeTip">长按识别二维码领券购买→</p>
+							<img src="images/hand.png" >
+							</div>
+							<div class="coderight"><img src="images/erweima.jpg" id="codeImg"></div>
+						</div>
+						<!-- 二维码区域 -->
+						</div>
+						<p class="imgBtn">合成图片</p>
+					</div>
+					<!-- 营销图-end -->
+					<div class="tabLeft bookDiv" id="mix">
+						<div class="listDiv">
+							<div class="imgAreadiv">
+								<div class="layui-carousel active" id="swiper">
+								  <div carousel-item>
+								    <div><img src="images/img/bg1.png"></div>
+								    <div><img src="images/img/bg2.png"></div>
+								    <div><img src="images/img/bg3.png"></div>
+								  </div>
+									<p class="topTextone about1">精选必抢单</p>
+									<p class="topTexttwo about2">明日预告</p>
+								</div>
+								<div class="bookList twoDiv">
+									<!-- 克隆list -->
+									<div class="list" id="cloneList">
+										<div class="leftInput">
+											<label>
+												<p class="inputText">点击上传图片<span>1</span></p>
+												<input type="file" name="" id="" value="" class="fileInput" />
+											</label>
+											<label class="imgView dragBox" for=""></label>
+										</div>
+										<div class="rightText">
+											<p class="rightTitle ellipsis about3">三只松鼠</p>
+											<p class="oldPrice">原价:<span class="about4">50.0</span></p>
+											<p class="salesPrice">券后:<span class="about5">10.0</span><del class="about4">50.0</del></p>
+											<p class="date about6">3月14号 上午10：00</p>
+										</div>
+										<span class="topTip">01</span>
+										<span class="removeImg">×</span>
+									</div>
+									<div class="list active">
+										<div class="leftInput">
+											<label>
+												<p class="inputText">点击上传图片<span>1</span></p>
+												<input type="file" name="" id="" value="" class="fileInput" />
+											</label>
+											<label class="imgView dragBox" for=""></label>
+										</div>
+										<div class="rightText">
+											<p class="rightTitle ellipsis about3">三只松鼠三只松鼠</p>
+											<p class="oldPrice">原价:<span class="about4">45.0</span></p>
+											<p class="salesPrice">券后:<span class="about5">47.0</span><del class="about4">45.0</del></p>
+											<p class="date about6">3月25号 上午10：20</p>
+										</div>
+										<span class="topTip">01</span>
+										<span class="removeImg">×</span>
+									</div>
+									<div class="list">
+										<div class="leftInput">
+											<label>
+												<p class="inputText">点击上传图片<span>1</span></p>
+												<input type="file" name="" id="" value="" class="fileInput" />
+											</label>
+											<label class="imgView dragBox" for=""></label>
+										</div>
+										<div class="rightText">
+											<p class="rightTitle ellipsis about3">三只松鼠三只松鼠三只松鼠三只松鼠</p>
+											<p class="oldPrice">原价:<span class="about4">50.0</span></p>
+											<p class="salesPrice">券后:<span class="about5">10.0</span><del class="about4">50.0</del></p>
+											<p class="date about6">3月14号 上午10：00</p>
+										</div>
+										<span class="topTip">01</span>
+										<span class="removeImg">×</span>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<p class="addBtn" id="b">添加</p>
+					</div>
+					<!-- 秒杀-end -->
+					<div class="tabLeft" id="bpro">
+						<div class="hotDiv">
+							<div class="imgAreadiv">
+								<div class="topImg active">
+									<p class="topTextone about7">爆款汇总</p>
+									<p class="topTexttwo about8">每日更新最火爆优质商品</p>
+								</div>
+								<div class="bookList">
+									<div class="list" id="cloneList">
+											<div class="leftInput">
+												<label>
+													<p class="inputText">点击上传图片<span>1</span></p>
+													<input type="file" name="" id="" value="" class="fileInput" />
+												</label>
+												<label class="imgView dragBox" for=""></label>
+											</div>
+											<div class="rightText">
+												<p class="rightTitle ellipsis about9">三只松鼠</p>
+												<p class="rightmess ellipsis about10">零食大礼包</p>
+												<p class="order"><span class="orderNum about11">6666</span><span class="time about12">3.20</span></p>
+											</div>
+											<span class="topTip">01</span>
+											<span class="removeImg">×</span>
+										</div>
+									<div class="list active">
+										<div class="leftInput">
+											<label>
+												<p class="inputText">点击上传图片<span>1</span></p>
+												<input type="file" name="" id="" value="" class="fileInput" />
+											</label>
+											<label class="imgView dragBox" for=""></label>
+										</div>
+										<div class="rightText">
+											<p class="rightTitle ellipsis about9">三只松鼠1</p>
+											<p class="rightmess ellipsis about10">零食大礼包1</p>
+											<p class="order"><span class="orderNum about11">6666</span><span class="time about12">3.20</span></p>
+										</div>
+										<span class="topTip">01</span>
+										<span class="removeImg">×</span>
+									</div>
+									<div class="list">
+										<div class="leftInput">
+											<label>
+												<p class="inputText">点击上传图片<span>1</span></p>
+												<input type="file" name="" id="" value="" class="fileInput" />
+											</label>
+											<label class="imgView dragBox" for=""></label>
+										</div>
+										<div class="rightText">
+											<p class="rightTitle ellipsis about9">三只松鼠三只松鼠</p>
+											<p class="rightmess ellipsis about10">零食大礼包零食大礼包</p>
+											<p class="order"><span class="orderNum about11">6666</span><span class="time about12">3.20</span></p>
+										</div>
+										<span class="topTip">01</span>
+										<span class="removeImg">×</span>
+									</div>
+									<div class="list">
+										<div class="leftInput">
+											<label>
+												<p class="inputText">点击上传图片<span>1</span></p>
+												<input type="file" name="" id="" value="" class="fileInput" />
+											</label>
+											<label class="imgView dragBox" for=""></label>
+										</div>
+										<div class="rightText">
+											<p class="rightTitle ellipsis about9">三只松鼠三只松鼠三只松鼠</p>
+											<p class="rightmess ellipsis about10">零食大礼包零食大礼包零食大礼包零食大礼包</p>
+											<p class="order"><span class="orderNum about11">6666</span><span class="time about12">3.20</span></p>
+										</div>
+										<span class="topTip">01</span>
+										<span class="removeImg">×</span>
+									</div>
+									<div class="list">
+										<div class="leftInput">
+											<label>
+												<p class="inputText">点击上传图片<span>1</span></p>
+												<input type="file" name="" id="" value="" class="fileInput" />
+											</label>
+											<label class="imgView dragBox" for=""></label>
+										</div>
+										<div class="rightText">
+											<p class="rightTitle ellipsis about9">三只</p>
+											<p class="rightmess ellipsis about10">零食</p>
+											<p class="order"><span class="orderNum about11">6666</span><span class="time about12">3.20</span></p>
+										</div>
+										<span class="topTip">01</span>
+										<span class="removeImg">×</span>
+									</div>
+									</div>
+							</div>
+						</div>
+						<p class="addBtn" id="c">添加</p>
+					</div>
+					<!-- 爆款-end -->
+				</div>
+				<!-- leftContent---end -->
+				<div class="centerContent">
+					<div class="configTab">
+						<a href="javascript:;" class="active">营销推广图</a>
+						<a href="javascript:;">秒杀预告</a>
+						<a href="javascript:;">爆款汇总</a>
+					</div>
+					<div class="tabCenter tabAd">
+						<ul class="tagTab">
+							<li class="active" data-id="0123">长条标签</li>
+							<li data-id="0123">圆标签</li>
+							<li data-id="16">小标签</li>
+							<li data-id="15">实拍图标签</li>
+							<li data-id="0123">聚划算</li>
+							<li data-id="0123">淘抢购</li>
+							<li data-id="01234">品牌标签</li>
+							<li>自定义上传</li>
+						</ul>
+						<div class="tagBox">
+							<div class="tagView tagOne">
+								<p class="salesTextOne link1">下单立减0元</p>
+								<p class="salesRight">
+									<span class="salesTypeTwo link2">券后价</span>
+									<span class="salesPriceThree link3">29.9</span>
+								</p>
+							</div>
+							<div class="tagView tagTwo">
+								<p class="salesTextOne link1">券后只需</p>
+								<p class="salesTypeTwo link2">29.9</p>
+								<p class="salesPriceThree link3">速度抢</p>
+							</div>
+							<div class="tagView tagThree clearfix">
+								<!-- <div class="littleTag link1 link6">小标签</div> -->
+								<div class="littleBox">
+									<div class="littleTag checked">
+										<span class="iconfont icon-1 link6"></span><p class="link1">今日推荐</p>
+									</div>
+								</div>
+								<div class="littleBox">
+									<div class="littleTag">
+										<span class="iconfont icon-2 link6"></span><p class="link1">今日推荐</p>
+									</div>
+								</div>
+								<div class="littleBox">
+									<div class="littleTag">
+										<span class="iconfont icon-3 link6"></span><p class="link1">今日推荐</p>
+									</div>
+								</div><div class="littleBox">
+									<div class="littleTag">
+										<span class="iconfont icon-4 link6"></span><p class="link1">今日推荐</p>
+									</div>
+								</div><div class="littleBox">
+									<div class="littleTag">
+										<span class="iconfont icon-5 link6"></span><p class="link1">今日推荐</p>
+									</div>
+								</div><div class="littleBox last">
+									<div class="littleTag tagLast">
+										<span class="iconfont icon-6 link6"></span><p class="link1">今日推荐</p>
+									</div>
+								</div>
+							</div>
+							<div class="tagView tagFour link5">
+								<i class="borderLeft"></i>
+								<i class="borderTop"></i>
+								<p class="salesTextOne link1">验货实拍</p>
+							</div>
+							<div class="tagView tagFive tagCom">
+								<p class="salesTextOne link1">下单立减20元 赶紧抢购吧!</p>
+								<p class="salesRight">
+									<span class="salesTypeTwo link2">到手价：</span>
+									<span class="salesPriceThree link3">￥29.9</span>
+								</p>
+							</div>
+							<div class="tagView tagSix tagCom">
+								<p class="salesTextOne link1">下单立减20元 赶紧抢购吧!</p>
+								<p class="salesRight">
+									<span class="salesTypeTwo link2">到手价：</span>
+									<span class="salesPriceThree link3">￥29.9</span>
+								</p>
+							</div>
+							<div class="tagView tagSeven tagCom">
+								<p class="salesTextOne link1">下单立减20元 赶紧抢购吧!</p>
+								<p class="salesRight">
+									<span class="salesTypeTwo link2">到手价：</span>
+									<span class="salesPriceThree link3">￥29.9</span>
+								</p>
+								<p class="salesMakeFour link4">三只松鼠</p>
+							</div>
+							<div class="tagView tagEight">
+								<label class="upImg">
+									<p class="iconPlus">＋</p>
+									<p>点击上传图片</p>
+									<input type="file" name="" id="" value="" accept="image/*" class="tagimgInput" />
+								</label>
+								<div class="tagImg"><img src="" alt="" draggable="false" ><span class="removeImg">×</span></div>
+							</div>
+						</div>
+						<div class="styleBox">
+							<div class="style styleCom">
+								<p class="title">风格</p>
+								<div class="styleSelect">
+									<input type="text" readonly="readonly" value="红色风格" class="selectInput" />
+									<img src="images/iconDown.jpg" class="iconDown">
+									<ul class="selectBox hide">
+										<li class="active" id="Red">红色风格</li>
+										<li id="Purple">紫色风格</li>
+										<li id="Orange">橙色风格</li>
+										<li id="Green">绿色风格</li>
+										<li id="Blue">蓝色风格</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="styleCom textCom" id="TextOne" data-type="link1">
+								<p class="title">文字一</p>
+								<input type="text" value="下单立减20元" class="TextOne">
+								<div class="styleSelect fontSize">
+									<input type="text" readonly="readonly" value="20" class="selectInput" />
+									<img src="images/iconDown.jpg" class="iconDown">
+									<ul class="selectBox hide">
+										<li>12</li>
+										<li>14</li>
+										<li>16</li>
+										<li>18</li>
+										<li class="active">20</li>
+										<li>22</li>
+										<li>24</li>
+										<li>26</li>
+										<li>28</li>
+										<li>30</li>
+										<li>32</li>
+									</ul>
+								</div>
+								<p class="colorpickerHolder"></p>
+								<div class="styleSelect fontFamily">
+									<input type="text" readonly="readonly" value="微软雅黑" class="selectInput" data-family="microsoft yahei"/>
+									<img src="images/iconDown.jpg" class="iconDown">
+									<ul class="selectBox hide">
+										<li class="active" id="microsoft yahei">微软雅黑</li>
+										<li id="SimSun">宋体</li>
+										<li id="KaiTi">楷体</li>
+										<li id="Arial">Arial</li>
+										<li id="SimHei">黑体</li>
+										<li id="microsoft JhengHei">微软正黑体</li>
+										<li id="NSimSun">新宋体</li>
+										<li id="FangSong">仿宋</li>
+										<li id="Times New Roman">Times New Roman</li>
+										<li id="Helvetica">Helvetica</li>
+										<li id="Verdana">Verdana</li>
+									</ul>
+								</div>
+							</div>
+							<div class="styleCom textCom" id="TypeTwo" data-type="link2">
+								<p class="title">文字二</p>
+								<input type="text" value="券后价" class="TextOne">
+								<div class="styleSelect fontSize">
+									<input type="text" readonly="readonly" value="12" class="selectInput" />
+									<img src="images/iconDown.jpg" class="iconDown">
+									<ul class="selectBox hide">
+										<li class="active">12</li>
+										<li>14</li>
+										<li>16</li>
+										<li>18</li>
+										<li>20</li>
+										<li>22</li>
+										<li>24</li>
+										<li>26</li>
+										<li>28</li>
+										<li>30</li>
+										<li>32</li>
+									</ul>
+								</div>
+								<p class="colorpickerHolder"> </p>
+								<div class="styleSelect fontFamily">
+									<input type="text" readonly="readonly" value="微软雅黑" class="selectInput" data-family="microsoft yahei"/>
+									<img src="images/iconDown.jpg" class="iconDown">
+									<ul class="selectBox hide">
+										<li class="active" id="microsoft yahei">微软雅黑</li>
+										<li id="SimSun">宋体</li>
+										<li id="KaiTi">楷体</li>
+										<li id="Arial">Arial</li>
+										<li id="SimHei">黑体</li>
+										<li id="microsoft JhengHei">微软正黑体</li>
+										<li id="NSimSun">新宋体</li>
+										<li id="FangSong">仿宋</li>
+										<li id="Times New Roman">Times New Roman</li>
+										<li id="Helvetica">Helvetica</li>
+										<li id="Verdana">Verdana</li>
+									</ul>
+								</div>
+							</div>
+							<div class="styleCom textCom" id="PriceThree" data-type="link3">
+								<p class="title">文字三</p>
+								<input type="text" value="29.9" class="TextOne">
+								<div class="styleSelect fontSize">
+									<input type="text" readonly="readonly" value="22" class="selectInput" />
+									<img src="images/iconDown.jpg" class="iconDown">
+									<ul class="selectBox hide">
+										<li>12</li>
+										<li>14</li>
+										<li>16</li>
+										<li>18</li>
+										<li>20</li>
+										<li class="active">22</li>
+										<li>24</li>
+										<li>26</li>
+										<li>28</li>
+										<li>30</li>
+										<li>32</li>
+									</ul>
+								</div>
+								<p class="colorpickerHolder"> </p>
+								<div class="styleSelect fontFamily">
+									<input type="text" readonly="readonly" value="微软雅黑" class="selectInput" data-family="microsoft yahei"/>
+									<img src="images/iconDown.jpg" class="iconDown">
+									<ul class="selectBox hide">
+										<li class="active" id="microsoft yahei">微软雅黑</li>
+										<li id="SimSun">宋体</li>
+										<li id="KaiTi">楷体</li>
+										<li id="Arial">Arial</li>
+										<li id="SimHei">黑体</li>
+										<li id="microsoft JhengHei">微软正黑体</li>
+										<li id="NSimSun">新宋体</li>
+										<li id="FangSong">仿宋</li>
+										<li id="Times New Roman">Times New Roman</li>
+										<li id="Helvetica">Helvetica</li>
+										<li id="Verdana">Verdana</li>
+									</ul>
+								</div>
+							</div>
+							<div class="styleCom textCom" id="MakeFour" data-type="link4">
+								<p class="title">文字四</p>
+								<input type="text" value="29.9" class="TextOne">
+								<div class="styleSelect fontSize">
+									<input type="text" readonly="readonly" value="12" class="selectInput" />
+									<img src="images/iconDown.jpg" class="iconDown">
+									<ul class="selectBox hide">
+										<li class="active">12</li>
+										<li>14</li>
+										<li>16</li>
+										<li>18</li>
+										<li>20</li>
+										<li>22</li>
+										<li>24</li>
+										<li>26</li>
+										<li>28</li>
+										<li>30</li>
+										<li>32</li>
+									</ul>
+								</div>
+								<p class="colorpickerHolder"> </p>
+								<div class="styleSelect fontFamily">
+									<input type="text" readonly="readonly" value="微软雅黑" class="selectInput" data-family="microsoft yahei"/>
+									<img src="images/iconDown.jpg" class="iconDown">
+									<ul class="selectBox hide">
+										<li class="active" id="microsoft yahei">微软雅黑</li>
+										<li id="SimSun">宋体</li>
+										<li id="KaiTi">楷体</li>
+										<li id="Arial">Arial</li>
+										<li id="SimHei">黑体</li>
+										<li id="microsoft JhengHei">微软正黑体</li>
+										<li id="NSimSun">新宋体</li>
+										<li id="FangSong">仿宋</li>
+										<li id="Times New Roman">Times New Roman</li>
+										<li id="Helvetica">Helvetica</li>
+										<li id="Verdana">Verdana</li>
+									</ul>
+								</div>
+							</div>
+							<div class="styleCom" id="borderColor" data-type="link5">
+								<p class="title">边框颜色</p>
+								<p class="colorpickerHolder"> </p>
+							</div>
+							<div class="styleCom" id="bgColor" data-type="link6">
+								<p class="title">背景颜色</p>
+								<p class="colorpickerHolder"> </p>
+							</div>
+							<label class="showQRcode"><input type="checkbox" name="" id="" value="显示商品二维码" />显示商品二维码</label>
+						</div>
+					</div>
+					<!-- 营销图推广--end -->
+					<div class="tabCenter tabBook">
+						<div class="style styleCom">
+							<p class="title">主题风格:</p>
+							<div class="styleSelect">
+								<input type="text" readonly="readonly" value="缤纷-单列" class="selectInput" />
+								<img src="images/iconDown.jpg" class="iconDown">
+								<ul class="selectBox hide" id="theme">
+									<li class="active" data-id="mix">缤纷-单列</li>
+									<li data-id="bule">蓝色-单列</li>
+									<li data-id="orange">橙黄色-单列</li>
+								</ul>
+							</div>
+						</div>
+						<div class="style styleCom">
+							<p class="title">排版风格:</p>
+							<div class="styleSelect">
+								<input type="text" readonly="readonly" value="单行标题" class="selectInput" />
+								<img src="images/iconDown.jpg" class="iconDown">
+								<ul class="selectBox hide" id="titleStyle">
+									<li class="active" >单行标题</li>
+									<li class="">多行标题</li>
+								</ul>
+							</div>
+						</div>
+						<div class="styleCom textCom" data-about="about1">
+							<p class="title">栏顶(上):</p>
+							<input type="text" value="精选必抢单" class="TextOne">
+							<div class="styleSelect fontSize">
+								<input type="text" readonly="readonly" value="40" class="selectInput" />
+								<img src="images/iconDown.jpg" class="iconDown">
+								<ul class="selectBox hide">
+									<li>16</li>
+									<li>18</li>
+									<li>20</li>
+									<li>22</li>
+									<li>24</li>
+									<li>26</li>
+									<li>28</li>
+									<li>30</li>
+									<li>32</li>
+									<li>34</li>
+									<li>36</li>
+									<li>38</li>
+									<li class="active">40</li>
+									<li>42</li>
+									<li>44</li>
+									<li>46</li>
+									<li>48</li>
+								</ul>
+							</div>
+							<p class="colorpickerHolder"> </p>
+						</div>
+						<div class="styleCom textCom" data-about="about2">
+							<p class="title">栏顶(下):</p>
+							<input type="text" value="明日预告" class="TextOne">
+							<div class="styleSelect fontSize">
+								<input type="text" readonly="readonly" value="30" class="selectInput" />
+								<img src="images/iconDown.jpg" class="iconDown">
+								<ul class="selectBox hide">
+									<li>16</li>
+									<li>18</li>
+									<li>20</li>
+									<li>22</li>
+									<li>24</li>
+									<li>26</li>
+									<li>28</li>
+									<li class="active">30</li>
+									<li>32</li>
+									<li>34</li>
+									<li>36</li>
+									<li>38</li>
+									<li>40</li>
+									<li>42</li>
+									<li>44</li>
+									<li>46</li>
+									<li>48</li>
+								</ul>
+							</div>
+							<p class="colorpickerHolder"> </p>
+						</div>
+						<div class="styleCom textCom" data-about="about3">
+							<p class="title">商品标题:</p>
+							<input type="text" value="三只松鼠" class="TextOne">
+							<div class="styleSelect fontSize">
+								<input type="text" readonly="readonly" value="18" class="selectInput" />
+								<img src="images/iconDown.jpg" class="iconDown">
+								<ul class="selectBox hide">
+									<li>12</li>
+									<li>14</li>
+									<li>16</li>
+									<li class="active">18</li>
+									<li>20</li>
+									<li>22</li>
+									<li>24</li>
+									<li>26</li>
+									<li>28</li>
+									<li>30</li>
+									<li>32</li>
+								</ul>
+							</div>
+							<p class="colorpickerHolder"> </p>
+						</div>
+						<div class="styleCom textCom" data-about="about4">
+							<p class="title">原价:</p>
+							<input type="text" value="50.0" class="TextOne">
+							<div class="styleSelect fontSize">
+								<input type="text" readonly="readonly" value="12" class="selectInput" />
+								<img src="images/iconDown.jpg" class="iconDown">
+								<ul class="selectBox hide">
+									<li class="active">12</li>
+									<li>14</li>
+									<li>16</li>
+									<li>18</li>
+									<li>20</li>
+									<li>22</li>
+									<li>24</li>
+									<li>26</li>
+									<li>28</li>
+									<li>30</li>
+									<li>32</li>
+								</ul>
+							</div>
+							<p class="colorpickerHolder"> </p>
+						</div>
+						<div class="styleCom textCom" data-about="about5">
+							<p class="title">券后价:</p>
+							<input type="text" value="10.0" class="TextOne">
+							<div class="styleSelect fontSize">
+								<input type="text" readonly="readonly" value="16" class="selectInput" />
+								<img src="images/iconDown.jpg" class="iconDown">
+								<ul class="selectBox hide">
+									<li>12</li>
+									<li>14</li>
+									<li class="active">16</li>
+									<li>18</li>
+									<li>20</li>
+									<li>22</li>
+									<li>24</li>
+									<li>26</li>
+									<li>28</li>
+									<li>30</li>
+									<li>32</li>
+								</ul>
+							</div>
+							<p class="colorpickerHolder"> </p>
+						</div>
+						<div class="styleCom textCom" data-about="about6">
+							<p class="title">日期:</p>
+							<input type="text" value="3月14号 上午10:00" class="TextOne">
+							<div class="styleSelect fontSize">
+								<input type="text" readonly="readonly" value="16" class="selectInput" />
+								<img src="images/iconDown.jpg" class="iconDown">
+								<ul class="selectBox hide">
+									<li>12</li>
+									<li>14</li>
+									<li class="active">16</li>
+									<li>18</li>
+									<li>20</li>
+									<li>22</li>
+									<li>24</li>
+									<li>26</li>
+									<li>28</li>
+									<li>30</li>
+									<li>32</li>
+								</ul>
+							</div>
+							<p class="colorpickerHolder"> </p>
+						</div>
+
+					</div>
+					<!-- 秒杀预告--end -->
+					<div class="tabCenter tabBook">
+						<div class="style styleCom">
+							<p class="title">主题风格:</p>
+							<div class="styleSelect">
+								<input type="text" readonly="readonly" value="缤纷-单列1" class="selectInput" />
+								<img src="images/iconDown.jpg" class="iconDown">
+								<ul class="selectBox hide" id="hotTheme">
+									<li class="active" data-id="bpro">缤纷-单列1</li>
+									<li data-id="brbr">缤纷-单列2</li>
+									<li data-id="popo">缤纷-单列3</li>
+								</ul>
+							</div>
+						</div>
+						<div class="styleCom textCom" data-about="about7">
+							<p class="title">栏顶(上):</p>
+							<input type="text" value="爆款汇总" class="TextOne">
+							<div class="styleSelect fontSize">
+								<input type="text" readonly="readonly" value="40" class="selectInput" />
+								<img src="images/iconDown.jpg" class="iconDown">
+								<ul class="selectBox hide">
+									<li>16</li>
+									<li>18</li>
+									<li>20</li>
+									<li>22</li>
+									<li>24</li>
+									<li>26</li>
+									<li>28</li>
+									<li>30</li>
+									<li>32</li>
+									<li>34</li>
+									<li>36</li>
+									<li>38</li>
+									<li class="active">40</li>
+									<li>42</li>
+									<li>44</li>
+									<li>46</li>
+									<li>48</li>
+								</ul>
+							</div>
+							<p class="colorpickerHolder"> </p>
+						</div>
+						<div class="styleCom textCom" data-about="about8">
+							<p class="title">栏顶(下):</p>
+							<input type="text" value="每日更新最火爆优质商品" class="TextOne">
+							<div class="styleSelect fontSize">
+								<input type="text" readonly="readonly" value="16" class="selectInput" />
+								<img src="images/iconDown.jpg" class="iconDown">
+								<ul class="selectBox hide">
+									<li class="active">16</li>
+									<li>18</li>
+									<li>20</li>
+									<li>22</li>
+									<li>24</li>
+									<li>26</li>
+									<li>28</li>
+									<li>30</li>
+									<li>32</li>
+									<li>34</li>
+									<li>36</li>
+									<li>38</li>
+									<li>40</li>
+									<li>42</li>
+									<li>44</li>
+									<li>46</li>
+									<li>48</li>
+								</ul>
+							</div>
+							<p class="colorpickerHolder"> </p>
+						</div>
+						<div class="styleCom textCom" data-about="about9">
+							<p class="title">品牌:</p>
+							<input type="text" value="[三只松鼠]" class="TextOne">
+							<div class="styleSelect fontSize">
+								<input type="text" readonly="readonly" value="18" class="selectInput" />
+								<img src="images/iconDown.jpg" class="iconDown">
+								<ul class="selectBox hide">
+									<li>12</li>
+									<li>14</li>
+									<li>16</li>
+									<li class="active">18</li>
+									<li>20</li>
+									<li>22</li>
+									<li>24</li>
+									<li>26</li>
+									<li>28</li>
+									<li>30</li>
+									<li>32</li>
+								</ul>
+							</div>
+							<p class="colorpickerHolder"> </p>
+						</div>
+						<div class="styleCom textCom" data-about="about10">
+							<p class="title">标题:</p>
+							<input type="text" value="5零食大礼包" class="TextOne">
+							<div class="styleSelect fontSize">
+								<input type="text" readonly="readonly" value="12" class="selectInput" />
+								<img src="images/iconDown.jpg" class="iconDown">
+								<ul class="selectBox hide">
+									<li class="active">12</li>
+									<li>14</li>
+									<li>16</li>
+									<li>18</li>
+									<li>20</li>
+									<li>22</li>
+									<li>24</li>
+									<li>26</li>
+									<li>28</li>
+									<li>30</li>
+									<li>32</li>
+								</ul>
+							</div>
+							<p class="colorpickerHolder"> </p>
+						</div>
+						<div class="styleCom textCom" data-about="about11">
+							<p class="title">出单量:</p>
+							<input type="text" value="66666" class="TextOne">
+							<div class="styleSelect fontSize">
+								<input type="text" readonly="readonly" value="32" class="selectInput" />
+								<img src="images/iconDown.jpg" class="iconDown">
+								<ul class="selectBox hide">
+									<li>12</li>
+									<li>14</li>
+									<li>16</li>
+									<li>18</li>
+									<li>20</li>
+									<li>22</li>
+									<li>24</li>
+									<li>26</li>
+									<li>28</li>
+									<li>30</li>
+									<li class="active">32</li>
+								</ul>
+							</div>
+							<p class="colorpickerHolder"> </p>
+						</div>
+						<div class="styleCom textCom" data-about="about12">
+							<p class="title">日期:</p>
+							<input type="text" value="7/18" class="TextOne">
+							<div class="styleSelect fontSize">
+								<input type="text" readonly="readonly" value="16" class="selectInput" />
+								<img src="images/iconDown.jpg" class="iconDown">
+								<ul class="selectBox hide">
+									<li>12</li>
+									<li>14</li>
+									<li class="active">16</li>
+									<li>18</li>
+									<li>20</li>
+									<li>22</li>
+									<li>24</li>
+									<li>26</li>
+									<li>28</li>
+									<li>30</li>
+									<li>32</li>
+								</ul>
+							</div>
+							<p class="colorpickerHolder"> </p>
+						</div>
+					</div>
+					<!-- 爆款汇总--end -->
+					<p class="btns">
+						<a href="javascript:;" class="creatImg">合成图片</a>
+						<a href="javascript:;" class="copyImg" data-clipboard-target ='#imgTarget'>复制图片</a>
+						<a href="javascript:;" class="saveImg">保存图片到本地</a>
+					</p>
+					<div class="picView" id="imgTarget"><img src=""></div>
+				</div>
+				<!-- centerContent---end -->
+				<div class="rightContent">
+					<div class="linkInput"><input type="text" placeholder="请输入商品链接获取图片" class="link" value="https://detail.tmall.com/item.htm?id=618219013261"><span class="getImg">获取</span></div>
+					<p class="picTitle">淘宝主图<span>请拖拽到左边需要合成的盒子里</span></p>
+					<ul class="picBox clearfix">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<!-- 实拍图功能暂时不用先隐藏 -->
+					<p class="picBtn">点击获取实拍图</p>
+				</div>
+				<!-- rightContent---end -->
+			</div>
+			<div class="toast">
+				<div class="imgBg"><img src="" alt="" class="checkImg"></div>
+			</div>
+			<div class="imgToast">
+				<div class="imgBox">
+					<p class="listTitle">实拍图片</p>
+					<ul class="imgList clearfix">
+						<li><img src=""></li>
+						<li><img src=""></li>
+						<li><img src=""></li>
+						<li><img src=""></li>
+						<li><img src=""></li>
+						<li><img src=""></li>
+					</ul>
+					<span class="close">×</span>
+				</div>
+			</div>
+			<!-- 实拍图---暂时不用 -->
+		</div>
+
+
+
+		<script src="https://www.70e.com/static/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://www.70e.com/static/until/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://www.70e.com/static/until/swiper/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/html2canvas.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="fonts/iconfont.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/tools.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
